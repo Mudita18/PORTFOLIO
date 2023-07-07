@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Oswald:wght@300&family=Poppins&family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color:lightpink;
+            color: white;
+            
+        }
+        nav{
+            display: flex;
+            font-size:larger;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color:darkred;
+            font-weight: bold;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: pink;
+        }
+        
+        .leftnav{
+            font-size: 3.0 rem;
+        }
+        .FirstSection{
+            display: flex;
+            /* justify-content:space-between; */
+            margin: 40px 40px;
+        }
+        .FirstSection > div{
+            width: 60%;
+        }
+        .leftSection{
+            margin: 110px 0;
+            font-size: 2rem;
+            color: black;
+            font-family: 'Poppins', sans-serif;
+            margin-left: 3rem;
+        }
+        .leftSection .buttons{
+            padding: 4px;
+        }
+        .leftSection .btn{
+            padding: 4px;
+            color:darkblue;
+            border:2px solid white;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .leftSection .btn a{
+            text-decoration: none;
+            color: darkblue;
+        }
+        .rightSection img{
+            width: 64%;
+            margin: 12px 59px;
+            margin-left: 130px
+        }
+        .purple{
+            color:darkblue;
+            font-weight: bolder;
+        }
+        .gray-text{
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        #element{
+            color: darkblue;
+            font-weight: bolder;
+        }
+        
+        .SecondSection{
+            max-width: 80vw;
+            font-size: 1rem;
+            color: darkred;
+            margin-left: 5rem;
+            margin-bottom: 50px;
+        }
+        .SecondSection .box{
+            background-color: darkred;
+            width: 82vw;
+            height: 2px;
+            margin: 50px 0;
+            margin-left: 0.6rem;
+            display: flex;
+        }
+        .SecondSection .vertical{
+            height: 70px;
+            width: 1.8px;
+            background-color: darkred;
+            margin: 0 160px;
+            font-size: 0.7rem;
+            color: black;
+        }
+        .vertical-title{
+            position: relative;
+            width: 350px;
+            top: 70px;
+            font-weight: bolder;
+            color: darkred;
+            font-size: 0.9rem;
+        }
+        .vertical-desc{
+            position: relative;
+            top: 80px;
+            color: grey;
+            width: 120px;
+            font-size: 1.0rem;
+        }
+        .AboutSection{
+            margin-top: 350px;
+            margin-left: 5.3rem;
+            display: flex;
+            color: darkred;
+            font-size: 1.2rem;
+        }
+        .AboutSection > div{
+            width: 41%;
+        }
+        .left{
+            display: flex;
+            margin-right: 0px;
+
+        }
+        .left img{
+            width: 63%;
+            margin-top: 55px;
+            margin-right: 0px;
+            border-radius: 50%;
+        }
+        .right{
+            margin-top: 100px;
+            font-size: 0.8rem;
+            font-style: italic;
+            font-family: 'Bacasime Antique', serif;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            text-align:center;
+            color: black;           
+        }
+        footer{
+            background-color:rgb(77, 73, 73);
+            height: 230px;
+        }
+        .footer{
+            display: flex;
+            margin: 50px 20px;
+            font-size:1.5rem;
+            /* justify-content: space-evenly; */
+        }
+        .first-footer{
+            margin-top: 25px;
+            margin-left: 40px;
+        }
+        .second-footer{
+            margin-top: 35px;
+            font-size: 1.3rem;
+            margin-left: 550px;
+        }
+        footer ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        
+        footer .footer-rights{
+            text-align: center;
+            font-size:medium;
+            color: white;
+            padding: 12px 0;
+        }
+        main hr{
+            border: 0;
+            background-color: black;
+            height: 1.6px;
+            margin: 10px 60px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class ="leftnav">MUDITA'S PORTFOLIO</div>
+            <div class="rightnav"> 
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#SecondSection">Projects</a></li>
+                    <li><a href="#AboutSection">About</a></li>
+                    <!-- <li><a href="/">Contact Me</a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="FirstSection" id ="FirstSection">
+            <div class="leftSection">
+                Hi! My name is <span class="purple">MUDITA.</span>
+                <div>I am a passionate </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"><a href="updated_resume.pdf">Download Resume</a></button>
+                    <button class="btn"><a href="https://github.com/Mudita18">Visit Github</a></button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="java1-bg.png">
+            </div>
+            
+        </section>
+        <hr>
+        <section class="SecondSection" id="SecondSection">
+            <span class="gray-text">What I have done so Far!</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title">
+                        QUIZ GAME: DESKTOP APPLICATION
+                    </div>
+                    <div class="vertical-desc">
+                        This a Java based desktop-app build using Java netbeans. It is a very interactive and responsive app.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        SENTIMENT ANALYSIS
+                    </div>
+                    <div class="vertical-desc">
+                        This project is done by compairing vader and roberta models using NLP and Transformers.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        BASIC GAMES USING JAVA
+                    </div>
+                    <div class="vertical-desc">
+                        These include small games like guessing-the-number and tic-tac-toe.
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <hr>
+        <section class="AboutSection" id="AboutSection">
+            <h1>About</h1>
+            <div class="left">
+                <img src="personal.JPG">
+            </div>
+            <div class="right">
+                <h1>I am Mudita Gupta ,a Java Developer pursuing B.Tech from Noida Institute of Engineering and Technology, 
+                    Greater Noida. I also have a profound knowledge in coding and DSA and basic understanding of Machine Learning. I have done various projects in Java and ML. I know how to build a team and work with it and it's members. I have been Web Master of IEEE, Student Branch at NIET therefore I have organized various technical events. Personally, I feel I am very organised person and always eager to know new things. I always look forward to help people in my field and build connections.</h1>
+            </div>
+        </section>  
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="first-footer">
+                <h3>Mudita's Developer Portfolio</h3>
+            </div>
+            <div class="second-footer">
+                <ul>
+                    <li><a href="#FirstSection">Home</a></li>
+                    <li><a href="#SecondSection">Projects</a></li>
+                    <li><a href="#AboutSection">About</a></li>
+                    <!-- <li>Contact Me</li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; www.muditasportfolio.com | All Rights Reserved.
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+    var typed = new Typed('#element', {
+      strings: ['Java Developer.'],
+      typeSpeed: 50,
+    });
+    </script>
+</body>
+</html>
